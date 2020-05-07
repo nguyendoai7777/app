@@ -1,0 +1,12 @@
+extends ../layout/include
+block include 
+
+  .products.cnt
+    .pr_intro Tất cả Tranh
+    .mansonry_lb
+      .grid
+        each product in products
+          .grid-item
+            .fix_fl
+              a.fancybox(href=product.url, data-caption=product.description, data-fancybox="product")
+                img(src=product.url ).card_product

@@ -1,0 +1,141 @@
+.slide-show {
+  width: 100%;
+}
+
+.slide-show .slider {
+  position: relative;
+  display: block !important;
+  height: 700px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide-show .slider .slider-item {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+}
+
+.slide-show .slider .slider-item .slider-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  max-width: 680px;
+  width: 100%;
+  padding-left: 140px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide-show .slider .slider-item .slider-content h1 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 40px;
+}
+
+.slide-show .slider .slider-item .slider-content p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.slide-show .slider .slider-item .slider-content a {
+  margin-top: 60px;
+}
+
+.slide-show .slider .owl-nav {
+  position: absolute;
+  top: 36%;
+  left: 0;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide-show .slider .owl-nav .owl-prev,
+.slide-show .slider .owl-nav .owl-next {
+  font-size: 60px;
+  margin: 0 20px;
+  color: #fff;
+  outline: 0;
+  padding: 0 17px 10px 20px !important;
+}
+
+.slide-show .slider .owl-nav .owl-prev {
+  padding: 0 20px 10px 17px !important;
+}
+
+.slide-show .slider .owl-nav .owl-prev:hover, .slide-show .slider .owl-nav .owl-next:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slide-show .slider .owl-dots {
+  position: absolute;
+  bottom: 55px;
+  left: 140px;
+}
+
+.slide-show .slider .owl-dots .owl-dot {
+  outline: 0;
+  width: 60px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 40px;
+}
+
+.slide-show .slider .owl-dots .active {
+  background-color: #fff;
+}
+
+.slide-show .slider .slider-item-img-1 {
+  background-image: url("https://i.imgur.com/HpO5T0u.jpg");
+}
+
+.slide-show .slider .slider-item-img-2 {
+  background-image: url("https://i.imgur.com/QnjF6R5.jpg");
+}
+
+.slide-show .slider .slider-item-img-3 {
+  background-image: url("https://i.imgur.com/AZKCKZx.jpg");
+}
+
+.slide-show .slider .slider-item-img-4 {
+  background-image: url("https://i.imgur.com/AhgtNuj.jpg");
+}
+
+@media screen and (max-width: 979px) {
+  body .header .slide-show .slider .slider-item .slider-content {
+    max-width: 100%;
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 529px) {
+  body .header .slide-show .slider .slider-content a {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  body .header .slide-show .slider .owl-dots {
+    display: none;
+  }
+}
+/*# sourceMappingURL=slide.css.map */

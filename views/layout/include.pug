@@ -1,0 +1,75 @@
+html(lang="vi")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/home.css")
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css')
+    
+    //link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css")
+block include
+  
+.navbar#navbar
+  .nav_size
+    .logo
+      a(href="/").navlink_home.def_link Home
+    .nav_menu
+      ul.list-style-none
+        li.d-inline._dropd
+          a(href="/products").def_link.navlink Tất Cả Sản Phẩm
+        li.d-inline._dropd
+          a(href="/figures").def_link.navlink Tượng
+        li.d-inline._dropd
+          a(href="/pictures").def_link.navlink Tranh
+        li.contact.d-inline.navlink Liên Hệ
+          .info_contact
+            i._41ico
+            .format_popup_bd.format_popup_bs
+              .ex_contact
+                .phone._bg4m
+                  ._icon
+                    i.fas.fa-phone-alt 
+                    p._zalo Zalo
+                  p.phone_nb 0974 222 127
+                .nav_line_div
+                ._fb._bg4m
+                  a(href="https://www.facebook.com/mr.ngoc.doai" target="_blank").def_link.fb_link FB - Fanpage
+block navbar
+
+.footer
+  .d_flex.d_justify_between.cnt
+    ._footer
+      ._ft01
+        p.ft_contact.ft_title thông tin liên hệ
+        p.contact_text.ft_pd8.ft_indent  SĐT - Zalo: &nbsp;&nbsp;&nbsp;&nbsp;0974 222 127
+        a.def_link.fb_navigations.ft_pd8.ft_indent(href="https://www.facebook.com/mr.ngoc.doai") FB - Fanpage
+      ._ft02
+        p.ft_title.ft_contact địa điểm
+        p.contact_text.ft_indent.ft_pd8.cap_text nguyễn văn đồng
+        p.contact_text.ft_indent.ft_pd8.cap_text tổ dân phố 13 - thịnh long - hải hậu - nam định
+    .location
+      p.ft_title.location_name.ft_contact bản đồ chỉ dẫn
+      p.ft_title.location_detail.ft_pd8.cap_text thị trấn thịnh long - hải hậu - nam định
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59974.80494602758!2d106.17846916708724!3d20.032620645435145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31361464565b8651%3A0xfa114ea9102dd4cc!2zVFQuIFRo4buLbmggTG9uZywgSOG6o2kgSOG6rXUsIE5hbSDEkOG7i25oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1587718064207!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  .end_footer
+block footer
+
+  ._b2t
+    i.fas.fa-arrow-up._b2t_color
+  ._mes
+    a(href="").mess_icon  
+
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js')
+script(src='https://masonry.desandro.com/masonry.pkgd.js')
+script(src='./../vendors/owl.carousel.min.js')
+script(src='./../vendors/effect.js')
+script(src='./../vendors/owl.js')
+script(src='./../vendors/fancy-view.js')
+block js
+
+
+
+

@@ -1,0 +1,23 @@
+extends ../layout/general
+block general 
+  h1 Create User
+
+  if errors
+    each error in errors
+      .alert.alert-danger= error
+
+  form(method='POST', action='/users/create', enctype="multipart/form-data")
+    .form-group
+      label(for="createName") Name
+      input#createName(type="text" name='name', class='form-control', value= values? values.name: '')
+
+    .form-group
+      label(for="createPhone") Phone
+      input#createPhone(type="text" name='phone', class='form-control' value= values? values.phone: '')
+
+    .form-group
+      label(for="createAvatar") Avatar
+      input#createAvatar.form-control-file(type="file" name='avatar')
+
+    button(class='btn btn-primary mt-3') create
+    

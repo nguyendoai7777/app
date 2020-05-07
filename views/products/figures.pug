@@ -1,0 +1,17 @@
+extends ../layout/include
+block include 
+
+  .products.cnt
+    .pr_intro Tất cả Tượng
+    .mansonry_lb
+      .grid._pdb18
+        each product in products
+          .grid-item
+            .fix_fl
+              a.fancybox(href=product.url, data-caption=product.description, data-fancybox="product")
+                img(src=product.url ).card_product
+    
+    .nav_end.d_flex.d_flex_start
+      a(href="/").all_pr_link.def_link 
+        i.fas.fa-angle-double-right.angle.prev
+        |Về Trang Chủ  

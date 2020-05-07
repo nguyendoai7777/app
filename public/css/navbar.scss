@@ -1,0 +1,120 @@
+
+// navbar
+$navlink_color: crimson;
+$contact_color: #007bff;
+$nav_backgr_color: #4267b2;
+$white_color: #fff;
+$back_link_color: #1d2129;
+$blue_bg_hover: #4267b2;
+
+.navbar {
+  width: 100%;
+  background-color: $nav_backgr_color;
+  position: fixed;
+  top: 0;
+  transition: .15s;
+  z-index: 10000;
+  .logo {
+    .navlink_home {
+      display: inline-block;
+      font-size: 16px;
+      font-style: italic;
+    }
+  }
+
+  .nav_menu {
+    .navlink {
+      color: $white_color;
+      font-size: 16px;
+      padding: 3px 15px;
+    }
+
+
+    ._dropd:hover .navlink {
+      background-color: #385898;
+      border-radius: 3px;
+    }
+  }
+
+  .contact {
+    cursor: pointer;
+    position: relative;
+
+    .info_contact {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 18px;
+      z-index: 9999999999;
+
+      ._41ico {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        top: -4px;
+        left: 22px;
+        transform: rotate(45deg);
+      }
+
+      .phone {
+        cursor: default;
+        font-size: 15px;
+        width: 170px;
+        color: $back_link_color;
+        display: flex;
+        align-items: center;
+
+        ._icon {
+          ._zalo {
+            font-style: italic;
+          }
+        }
+
+        .phone_nb {
+          padding-left: 20px;
+        }
+      }
+
+      .nav_line_div {
+        border-bottom: 1px solid #e9ebee;
+        margin: 5px 20px;
+      }
+
+      ._fb {
+        .fb_link {
+          color: $back_link_color;
+        }
+      }
+
+      ._fb:hover {
+        background-color: $blue_bg_hover;
+
+        .fb_link {
+          color: #fff;
+        }
+      }
+
+      .ex_contact {
+        padding: 7px 0;
+      }
+    }
+  }
+
+  ._hidden {
+    display: none;
+  }
+
+  .contact:hover .info_contact {
+    display: block;
+  }
+
+  .nav_size {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+}
